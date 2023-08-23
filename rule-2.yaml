@@ -1,0 +1,142 @@
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: ./ruleset/google.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: ./ruleset/private.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Netflix.yaml
+    path: ./Rule/Netflix.yaml
+    interval: 3600
+  GitHub:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/GitHub.yaml
+    path: ./Rule/GitHub.yaml
+    interval: 3600
+
+rules:
+  - DOMAIN-SUFFIX,calibre-ebook.com,PROXY
+  - DOMAIN-SUFFIX,truenas.com,PROXY
+  - DOMAIN-SUFFIX,nunit.org,PROXY
+  - DOMAIN-SUFFIX,mailfence.com,PROXY
+  - DOMAIN-SUFFIX,gitlab.com,PROXY
+  - DOMAIN-SUFFIX,springdoc.org,PROXY
+  - DOMAIN-SUFFIX,fandom.com,PROXY
+  - DOMAIN-SUFFIX,mesa3d.org,PROXY
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,1password.com,PROXY
+  - DOMAIN-SUFFIX,ntop.org,PROXY
+  - DOMAIN-SUFFIX,gradle.org,PROXY
+  - DOMAIN-SUFFIX,deepl.com,HK
+  - DOMAIN-SUFFIX,android.com,PROXY
+  - DOMAIN-SUFFIX,inoreader.com,PROXY
+  - DOMAIN-SUFFIX,wordpress.org,PROXY
+  - DOMAIN-SUFFIX,facebook.com,PROXY
+  - DOMAIN-SUFFIX,stackoverflow.com,PROXY
+  - DOMAIN-SUFFIX,rutracker.org,PROXY
+  - DOMAIN-SUFFIX,pages.werls.top,PROXY
+  - DOMAIN-SUFFIX,git.werls.top,PROXY
+  - DOMAIN-SUFFIX,blog.werls.top,PROXY
+  - DOMAIN-SUFFIX,werls.top,PROXY
+  - DOMAIN-SUFFIX,google.com,PROXY
+  - DOMAIN-SUFFIX,parsec.app,PROXY
+  - DOMAIN-SUFFIX,eclipse.org,PROXY
+  - DOMAIN-SUFFIX,bintray.com,PROXY
+  - DOMAIN-SUFFIX,jboss.org,PROXY
+  - DOMAIN-SUFFIX,debian.org,PROXY
+  - DOMAIN-SUFFIX,apache.org,PROXY
+  - DOMAIN-SUFFIX,maven.org,PROXY
+  - DOMAIN-SUFFIX,sonatype.com,PROXY
+  - DOMAIN-SUFFIX,supporters.eff.org,PROXY
+  - DOMAIN-SUFFIX,certbot.eff.org,PROXY
+  - DOMAIN-SUFFIX,openai.com,openai
+  - DOMAIN-SUFFIX,amazonaws.com,PROXY
+  - DOMAIN-SUFFIX,obsproject.com,PROXY
+  - DOMAIN-SUFFIX,youtube.com,PROXY
+  - DOMAIN-SUFFIX,bing.com,google
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,GitHub,google
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,OneDrive,PROXY
+  - MATCH,DIRECT
