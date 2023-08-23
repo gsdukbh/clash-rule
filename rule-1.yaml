@@ -314,11 +314,11 @@ rule-providers:
     interval: 86400
 rules:
   # 广告
-  - RULE-SET,BanAD,REJECT
-  - RULE-SET,BanEasyList,REJECT
-  - RULE-SET,BanEasyListChina,REJECT
-  - RULE-SET,BanEasyPrivacy,REJECT
-  - RULE-SET,BanProgramAD,REJECT
+  # - RULE-SET,BanAD,REJECT
+  # - RULE-SET,BanEasyList,REJECT
+  # - RULE-SET,BanEasyListChina,REJECT
+  # - RULE-SET,BanEasyPrivacy,REJECT
+  # - RULE-SET,BanProgramAD,REJECT
   # 国内
   - RULE-SET,ChinaCompanyIp,DIRECT
   - RULE-SET,ChinaDomain,DIRECT
