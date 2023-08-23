@@ -89,7 +89,12 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/GitHub.yaml
     path: ./Rule/GitHub.yaml
     interval: 86400
-
+  OneDrive:
+    type: http
+    behavior: classical
+    url: "https://gfwcdn.werls.top/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/OneDrive.yaml"
+    path: ./ACL4SSR/OneDrive.yaml
+    interval: 86400
 rules:
   - DOMAIN-SUFFIX,calibre-ebook.com,PROXY
   - DOMAIN-SUFFIX,truenas.com,PROXY
@@ -138,4 +143,5 @@ rules:
   - RULE-SET,tld-not-cn,PROXY
   - RULE-SET,gfw,PROXY
   - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,OneDrive,PROXY
   - MATCH,DIRECT

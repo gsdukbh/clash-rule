@@ -89,6 +89,12 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/GitHub.yaml
     path: ./Rule/GitHub.yaml
     interval: 3600
+  OneDrive:
+    type: http
+    behavior: classical
+    url: "https://gfwcdn.werls.top/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/OneDrive.yaml"
+    path: ./ACL4SSR/OneDrive.yaml
+    interval: 86400
 rules:
   - DOMAIN-SUFFIX,stackoverflow.com,PROXY
   - DOMAIN-SUFFIX,rutracker.org,PROXY
