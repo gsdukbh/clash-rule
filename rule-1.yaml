@@ -306,7 +306,12 @@ rule-providers:
     url: "https://gfwcdn.werls.top/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/UnBan.yaml"
     path: ./ACL4SSR/UnBan.yaml
     interval: 86400 
-
+  GitHub:
+    type: http
+    behavior: classical
+    url: https://gfwcdn.werls.top/gh/Semporia/Clash@master/Rule/GitHub.yaml
+    path: ./Rule/GitHub.yaml
+    interval: 86400
 rules:
   # 广告
   - RULE-SET,BanAD,REJECT
