@@ -82,13 +82,13 @@ rule-providers:
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Netflix.yaml
     path: ./Rule/Netflix.yaml
-    interval: 3600
+    interval: 86400
   GitHub:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/GitHub.yaml
     path: ./Rule/GitHub.yaml
-    interval: 3600
+    interval: 86400
 
 rules:
   - DOMAIN-SUFFIX,calibre-ebook.com,PROXY
@@ -138,5 +138,4 @@ rules:
   - RULE-SET,tld-not-cn,PROXY
   - RULE-SET,gfw,PROXY
   - RULE-SET,telegramcidr,PROXY
-  - RULE-SET,OneDrive,PROXY
   - MATCH,DIRECT
