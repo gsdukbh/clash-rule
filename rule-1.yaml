@@ -371,4 +371,4 @@ rules:
   - RULE-SET,OneDrive,PROXY
   - RULE-SET,Telegram,PROXY
   # 必须
-  - MATCH,PROXY
+  - MATCH,DIRECT
