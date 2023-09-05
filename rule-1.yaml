@@ -378,4 +378,4 @@ rules:
   - RULE-SET,Telegram,PROXY
   - RULE-SET,apple,DIRECT
   # 必须
-  - MATCH,PROXY
+  - MATCH,DIRECT
