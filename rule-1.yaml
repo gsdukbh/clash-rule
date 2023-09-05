@@ -312,6 +312,12 @@ rule-providers:
     url: https://gfwcdn.werls.top/gh/Semporia/Clash@master/Rule/GitHub.yaml
     path: ./Rule/GitHub.yaml
     interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://gfwcdn.werls.top/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400  
 rules:
   # 广告
   # - RULE-SET,BanAD,REJECT
@@ -370,5 +376,6 @@ rules:
   - RULE-SET,Microsoft,PROXY
   - RULE-SET,OneDrive,PROXY
   - RULE-SET,Telegram,PROXY
+  - RULE-SET,apple,DIRECT
   # 必须
   - MATCH,PROXY
