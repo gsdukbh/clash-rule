@@ -1,0 +1,26 @@
+payload:
+  - DOMAIN-SUFFIX,reddit.com,openai
+  - DOMAIN-SUFFIX,gitlab.com,google
+  - DOMAIN-SUFFIX,cloudflarestorage.com,DIRECT
+  - DOMAIN-SUFFIX,fandom.com,openai
+  - DOMAIN-SUFFIX,deepl.com,HK
+  - DOMAIN-SUFFIX,weather.com,PROXY
+  - DOMAIN-SUFFIX,imgur.com,google
+  - DOMAIN-SUFFIX,rubygems.org,PROXY
+  - DOMAIN-SUFFIX,t.me,PROXY
+  - DOMAIN-SUFFIX,oaistatic.com,openai
+  - DOMAIN-SUFFIX,cloud.werls.top,DIRECT
+  - DOMAIN-SUFFIX,rpi.werls.top,DIRECT
+  - DOMAIN-SUFFIX,claude.ai,openai
+  - DOMAIN-SUFFIX,quora.com,HK
+  - DOMAIN-SUFFIX,gemini.google.com,openai
+  - DOMAIN-SUFFIX,googleapis.com,PROXY
+  - DOMAIN-SUFFIX,bing.com,openai
+  - DOMAIN-SUFFIX,index-cdn.jetbrains.com,google
+  - DOMAIN-SUFFIX,youtrack.jetbrains.com,openai
+  - DOMAIN-SUFFIX,www.limetorrents.to,google
+  - DOMAIN-SUFFIX,openai.com,openai
+  - DOMAIN-SUFFIX,chatgpt.com,openai
+  - DOMAIN-SUFFIX,cdn.oaistatic.com,openai
+  - DOMAIN-SUFFIX,statsigapi.net,openai
+  - DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com,google
